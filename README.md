@@ -1,6 +1,6 @@
-# 📚 Sistema Escolar - Projeto ADS
+# 📱 Sistema Escolar - Projeto ADS (Mobile)
 
-Este projeto tem como objetivo o desenvolvimento de um sistema escolar simples, utilizando **HTML, CSS e JavaScript**, com foco na prática de conceitos fundamentais de desenvolvimento web.
+Este projeto tem como objetivo o desenvolvimento de um sistema escolar com foco em **aplicações mobile**, utilizando **HTML, CSS e JavaScript**, simulando o comportamento de um aplicativo responsivo.
 
 ## 🚀 Funcionalidades
 
@@ -9,12 +9,14 @@ Este projeto tem como objetivo o desenvolvimento de um sistema escolar simples, 
 * Cadastro de cursos
 * Cadastro de alunos
 * Persistência de dados utilizando **localStorage**
+* Interface responsiva (mobile first)
 
 ## 🎯 Objetivo do Projeto
 
-Este projeto é acadêmico e foi desenvolvido para consolidar conhecimentos em:
+Projeto acadêmico voltado para o desenvolvimento de competências em:
 
-* Estrutura de sistemas web
+* Construção de aplicações mobile (web responsiva)
+* Estruturação de telas e navegação
 * Organização de código (HTML, CSS e JS)
 * Versionamento com Git e GitHub
 * Lógica de programação no frontend
@@ -23,18 +25,22 @@ Este projeto é acadêmico e foi desenvolvido para consolidar conhecimentos em:
 
 Este sistema será evoluído ao longo do curso para incluir:
 
-* Integração com banco de dados real
-* Desenvolvimento de APIs (Backend)
-* Consumo de serviços REST
-* Implementação de **Inteligência Artificial e LLM (IA Generativa)** para apoio à tomada de decisão
+* Integração com backend (API REST)
+* Conexão com banco de dados
+* Transformação para app mobile (ex: React Native)
+* Deploy em ambiente de produção
 
-## 🧠 Visão Futura
+## 🧠 Inteligência Artificial (Próxima Etapa)
 
-A proposta final é transformar este sistema em uma aplicação mais inteligente, capaz de:
+Como evolução final, o projeto incorporará **IA Generativa (LLM)** para:
 
-* Gerar insights automáticos
-* Auxiliar na análise de dados
-* Utilizar modelos de IA para suporte ao usuário
+* Geração de insights automáticos
+* Apoio à tomada de decisão
+* Interação inteligente com o usuário (chatbot)
+
+## 🔮 Visão Futura
+
+A proposta é transformar este sistema em uma aplicação mobile inteligente, integrando dados, automação e Inteligência Artificial para suporte à gestão educacional.
 
 ---
 
