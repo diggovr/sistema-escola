@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     ARQUIVO: usuario.html  (tela de Cadastro de Usuário)
+     AULA 2 — RS Treinamento & Consultoria · ADS
+     ============================================================
+     Observe que este arquivo é bem enxuto:
+     - Sem <style> → visual vem de css/style.css
+     - Sem <script> → lógica vem de js/app.js
+     - Apenas a ESTRUTURA HTML desta tela
+     ============================================================ -->
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário · RS Treinamento</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Mesmo CSS do index.html — compartilhado! -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="phone">
+
+    <!-- HEADER COM BOTÃO VOLTAR -->
+    <div class="rs-header">
+      <div class="rs-logo">RS</div>
+      <div class="rs-header-text">
+        <h1>RS Treinamento</h1>
+        <p>ADS · Desenvolvimento de Sistemas</p>
+      </div>
+      <!-- irParaLogin() está em js/app.js -->
+      <button class="rs-back" onclick="irParaLogin()">← Voltar</button>
+    </div>
+
+    <!-- FORMULÁRIO DE CADASTRO -->
+    <div class="rs-form">
+      <div class="rs-form-title">Cadastro de usuário</div>
+      <div class="rs-form-subtitle">Cria acesso ao sistema escolar</div>
+
+      <!-- ALERTA DE SUCESSO: começa invisível (display:none no CSS)
+           showOk('usuario-ok', 'index.html') vai exibi-lo por 1,6s
+           e depois redirecionar para index.html -->
+      <div class="rs-alert-ok" id="usuario-ok">
+        ✅ Usuário cadastrado com sucesso!
+      </div>
+
+      <!-- CAMPO: Nome completo -->
+      <div class="rs-field">
+        <label class="rs-label">Nome completo <span class="req">*</span></label>
+        <input class="rs-input" id="inp-nome" type="text"
+               placeholder="ex: Maria Silva" value="Maria Silva">
+      </div>
+
+      <!-- CAMPO: Login -->
+      <div class="rs-field">
+        <label class="rs-label">Login <span class="req">*</span></label>
+        <input class="rs-input" id="inp-login-novo" type="text"
+               placeholder="ex: maria.silva" value="maria.silva">
+        <div class="rs-hint">* sem espaços e sem acentos</div>
+      </div>
+
+      <!-- CAMPO: Senha -->
+      <div class="rs-field">
+        <label class="rs-label">Senha <span class="req">*</span></label>
+        <input class="rs-input" id="inp-senha-nova" type="password"
+               placeholder="mínimo 6 caracteres" value="senha123">
+      </div>
+
+      <!-- showOk() está em js/app.js
+           Parâmetros: id do alerta + página de destino após 1,6s -->
+      <button class="rs-btn" onclick="showOk('usuario-ok', 'index.html')">
+        Cadastrar
+      </button>
+
+      <button class="rs-btn-outline" onclick="irParaLogin()">
+        Voltar ao login
+      </button>
+    </div>
+
+  </div>
+
+  <div class="footer-note">
+    Protótipo didático · RS Treinamento &amp; Consultoria · ADS
+  </div>
+
+  <!-- Mesmo JS do index.html — compartilhado! -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
